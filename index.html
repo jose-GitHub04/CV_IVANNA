@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============================================================
+       PAGE INFO  (title, description, share preview, colour, icon)
+       ============================================================ -->
+  <title>Ivanna Tsymbal | Customer Advisor candidate in Porto</title>
+  <meta name="description" content="Portfolio of Ivanna Tsymbal, a multilingual translation graduate in Porto (Ukrainian, English, Portuguese, Russian) seeking a Customer Advisor role. Available to work on-site in Porto.">
+  <meta name="theme-color" content="#FDE4EC">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ivanna Tsymbal | Customer Advisor candidate in Porto">
+  <meta property="og:description" content="Multilingual communicator (Ukrainian, English, Portuguese, Russian) seeking a Customer Advisor role in Porto. Available to work on-site in Porto.">
+  <!-- To add a share image later: <meta property="og:image" content="https://YOUR-SITE/assets/ivanna-headshot.jpg">
+       (this needs the full web address, so it is left out until the site is published). -->
+
+  <!-- Pink favicon, drawn as inline SVG (no extra file needed) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23F7BFD2'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%233B2A35'%3EIT%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts: Fraunces (headings) + DM Sans (text). If offline, the page falls back to Georgia / system fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;display=swap" rel="stylesheet">
+
+  <!-- Marks the page as "JavaScript available" before first paint (used by the scroll animations and mobile menu) -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <style>
+    /* ============================================================
+       1. COLOURS & SETTINGS  (change the look of the whole page here)
+       Text on pink is ALWAYS --ink. --rose-700 is for links and small
+       accent text on white / blush / pink-100 only.
+       ============================================================ */
+    :root {
+      --white:    #FFFFFF;   /* page and card background */
+      --blush:    #FFF6F9;   /* alternate section background */
+      --pink-100: #FDE4EC;   /* hero wash, chips, soft card fills */
+      --pink-300: #F7BFD2;   /* signature light pink: borders, dividers, timeline, buttons */
+      --pink-400: #F2A9C4;   /* slightly deeper pink, used only for button hover */
+      --rose-700: #A8345F;   /* links and small accent text only */
+      --ink:      #3B2A35;   /* headings and body text */
+      --ink-soft: #6B5560;   /* secondary text */
+
+      --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
+      --font-sans:  "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+      --r-s: 16px;
+      --r-m: 22px;
+      --r-l: 28px;
+
+      --shadow-s: 0 1px 2px rgba(168, 52, 95, .06), 0 6px 18px rgba(168, 52, 95, .08);
+      --shadow-m: 0 2px 4px rgba(168, 52, 95, .06), 0 14px 34px rgba(168, 52, 95, .14);
+
+      --nav-h: 64px;
+      --gutter: 16px;
+      --maxw: 1120px;
+    }
+
+    /* ============================================================
+       2. BASE STYLES
+       ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--nav-h) + 8px); }
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--white);
+      overflow-x: clip;
+      -webkit-font-smoothing: antialiased;
+    }
+    img, svg { display: block; max-width: 100%; }
+    h1, h2, h3 { font-variant-numeric: lining-nums; font-family: var(--font-serif); font-weight: 600; line-height: 1.15; margin: 0; color: var(--ink); text-wrap: balance; }
+    p { margin: 0; }
+    ul, ol { margin: 0; padding: 0; list-style: none; }
+    a { color: var(--rose-700); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 3px solid var(--rose-700); outline-offset: 3px; border-radius: 6px; }
+
+    .nowrap { white-space: nowrap; }
+    .visually-hidden {
+      position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+    .skip-link {
+      position: absolute; left: 16px; top: -100px; z-index: 100;
+      background: var(--white); color: var(--ink); font-weight: 600;
+      padding: 12px 20px; border-radius: 999px; border: 2px solid var(--rose-700);
+    }
+    .skip-link:focus { top: 12px; }
+
+    .wrap { width: min(100% - var(--gutter) * 2, var(--maxw)); margin-inline: auto; position: relative; z-index: 1; }
+
+    /* Simple line icons (inline SVG, drawn in the current text colour) */
+    .icon {
+      width: 1.25em; height: 1.25em; flex: none;
+      fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    /* ============================================================
+       3. SECTION SCAFFOLD  (alternating white / blush, wavy edge on top)
+       ============================================================ */
+    .section {
+      --section-bg: var(--white);
+      position: relative;
+      background: var(--section-bg);
+      padding-block: clamp(64px, 10vw, 112px);
+      overflow-x: clip;
+    }
+    .section--blush { --section-bg: var(--blush); }
+    .wave {
+      position: absolute; left: 0; bottom: calc(100% - 1px);
+      width: 100%; height: clamp(28px, 5vw, 64px);
+      fill: var(--section-bg); pointer-events: none;
+    }
+    .deco { position: absolute; pointer-events: none; z-index: 0; }
+    .deco--blob { fill: var(--pink-300); opacity: .28; }
+    .deco--blob-soft { fill: var(--pink-100); opacity: .9; }
+
+    .section-head { text-align: center; max-width: 640px; margin: 0 auto clamp(32px, 5vw, 56px); }
+    .section-head h2 { font-size: clamp(2rem, 6vw, 2.75rem); }
+    .section-head h2::after {
+      content: ""; display: block; width: 56px; height: 4px; border-radius: 4px;
+      background: var(--pink-300); margin: 14px auto 0;
+    }
+    .section-head p { margin-top: 14px; color: var(--ink-soft); }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--pink-300);
+      border-radius: var(--r-m);
+      box-shadow: var(--shadow-s);
+      padding: 22px;
+    }
+
+    /* ============================================================
+       4. BUTTONS & SMALL PARTS (pill, chips, tags)
+       ============================================================ */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      min-height: 48px; padding: 0 16px;
+      border-radius: 999px; border: 1.5px solid transparent;
+      font: 600 1rem/1.2 var(--font-sans); color: var(--ink);
+      text-decoration: none; cursor: pointer;
+      transition: background-color .2s ease, border-color .2s ease, transform .2s ease;
+    }
+    .btn--primary { background: var(--pink-300); border-color: var(--pink-300); box-shadow: var(--shadow-s); }
+    .btn--primary:hover { background: var(--pink-400); border-color: var(--pink-400); transform: translateY(-1px); text-decoration: none; }
+    .btn--secondary { background: var(--white); border-color: var(--pink-300); }
+    .btn--secondary:hover { background: var(--pink-100); text-decoration: none; }
+
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--white); border: 1px solid var(--pink-300); border-radius: 999px;
+      padding: 8px 16px; font-weight: 500; font-size: .95rem; color: var(--ink);
+      box-shadow: var(--shadow-s);
+    }
+    .pill .icon { color: var(--rose-700); }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .tag {
+      font-size: .85rem; font-weight: 600; line-height: 1.2;
+      background: var(--pink-100); color: var(--ink);
+      border-radius: 999px; padding: 6px 12px;
+    }
+
+    .link-ext { display: inline-block; padding-block: 9px; font-weight: 600; margin-top: 6px; }
+    .link-ext .icon { display: inline-block; width: 1em; height: 1em; margin-left: 6px; vertical-align: -.12em; }
+
+    /* ============================================================
+       5. NAVIGATION  (sticky bar; collapses into a menu on small screens)
+       ============================================================ */
+    .site-header {
+      position: relative; top: 0; z-index: 50;
+      background: rgba(255, 255, 255, .92);
+      -webkit-backdrop-filter: saturate(1.2) blur(10px);
+      backdrop-filter: saturate(1.2) blur(10px);
+      border-bottom: 1px solid var(--pink-100);
+      transition: box-shadow .25s ease;
+    }
+    .js .site-header { position: sticky; }
+    .site-header.is-scrolled { box-shadow: 0 6px 24px rgba(168, 52, 95, .12); }
+    .nav-bar { position: static; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; min-height: var(--nav-h); gap: 4px 12px; }
+
+    .brand {
+      display: inline-flex; align-items: center; gap: 10px; min-height: 44px;
+      font-family: var(--font-serif); font-weight: 600; font-size: 1.2rem;
+      color: var(--ink); text-decoration: none;
+    }
+    .brand:hover { text-decoration: none; }
+    .brand__mark {
+      width: 36px; height: 36px; border-radius: 50%;
+      display: grid; place-items: center;
+      background: var(--pink-300); color: var(--ink); font-size: .9rem; letter-spacing: .02em;
+    }
+
+    .nav-toggle {
+      display: none; align-items: center; gap: 8px;
+      min-height: 44px; min-width: 44px; padding: 0 14px;
+      background: var(--white); color: var(--ink);
+      border: 1.5px solid var(--pink-300); border-radius: 999px;
+      font: 600 .95rem/1 var(--font-sans); cursor: pointer;
+    }
+    .js .nav-toggle { display: inline-flex; }
+    .nav-toggle[aria-expanded="false"] .icon-close,
+    .nav-toggle[aria-expanded="true"] .icon-menu { display: none; }
+
+    .site-nav { flex-basis: 100%; }
+    .site-nav ul { display: flex; flex-wrap: wrap; gap: 4px; padding-bottom: 8px; }
+    .site-nav a {
+      position: relative; display: flex; align-items: center;
+      min-height: 48px; padding: 0 16px; border-radius: 14px;
+      color: var(--ink); font-weight: 500; text-decoration: none;
+    }
+    .site-nav a:hover { background: var(--pink-100); }
+    .site-nav a[aria-current="true"] { background: var(--pink-100); }
+    .site-nav a[aria-current="true"]::after {
+      content: ""; position: absolute; left: 16px; right: 16px; bottom: 8px;
+      height: 2px; border-radius: 2px; background: var(--rose-700);
+    }
+    .site-nav .nav-cta { background: var(--pink-300); font-weight: 600; justify-content: center; }
+    .site-nav .nav-cta:hover { background: var(--pink-400); }
+    .site-nav .nav-cta[aria-current="true"]::after { background: var(--ink); }
+
+    /* Mobile menu: only when JavaScript is available; otherwise the links simply wrap under the name */
+    @media (max-width: 899.98px) {
+      .js .site-nav {
+        position: absolute; top: 100%; left: 0; right: 0;
+        background: var(--white); border-bottom: 1px solid var(--pink-300);
+        border-radius: 0 0 var(--r-m) var(--r-m);
+        box-shadow: var(--shadow-m);
+        padding: 8px var(--gutter) 16px;
+        visibility: hidden; opacity: 0; transform: translateY(-8px);
+        transition: opacity .2s ease, transform .2s ease, visibility 0s linear .2s;
+      }
+      .js .site-nav.is-open { visibility: visible; opacity: 1; transform: none; transition-delay: 0s; }
+      .js .site-nav ul { flex-direction: column; flex-wrap: nowrap; padding-bottom: 0; }
+      .js .site-nav .nav-cta { margin-top: 8px; }
+    }
+    @media (min-width: 900px) {
+      :root { --nav-h: 72px; }
+      .site-header { position: sticky; }
+      .nav-bar { flex-wrap: nowrap; }
+      .js .nav-toggle { display: none; }
+      .site-nav { flex-basis: auto; }
+      .site-nav ul { flex-wrap: nowrap; align-items: center; padding-bottom: 0; }
+      .site-nav a { min-height: 44px; padding: 0 14px; border-radius: 999px; }
+      .site-nav a[aria-current="true"]::after { left: 14px; right: 14px; bottom: 7px; }
+      .site-nav .nav-cta { margin-left: 8px; padding: 0 20px; }
+    }
+
+    /* ============================================================
+       6. HERO
+       ============================================================ */
+    .hero {
+      position: relative; overflow-x: clip;
+      background: linear-gradient(180deg, var(--pink-100) 0%, var(--blush) 62%, var(--white) 100%);
+      padding: 28px 0 clamp(48px, 8vw, 88px);
+    }
+    .hero__grid { display: grid; gap: 24px; }
+    .hero__photo {
+      order: -1; position: relative; justify-self: center;
+      width: 190px; aspect-ratio: 1; display: grid; place-items: center;
+    }
+    .hero__blob { position: absolute; inset: -9%; width: 118%; height: 118%; max-width: none; fill: var(--pink-300); opacity: .75; }
+    .avatar {
+      position: relative; width: 78%; height: 78%; object-fit: cover; border-radius: 50%;
+      border: 6px solid var(--white);
+      box-shadow: 0 0 0 4px var(--pink-300), var(--shadow-m);
+    }
+    .hero__text { text-align: center; }
+    .hero h1 { font-size: clamp(2.6rem, 11vw, 4.75rem); letter-spacing: -.015em; }
+    .hero__headline { margin-top: 12px; font-size: clamp(1.1rem, 3.6vw, 1.45rem); line-height: 1.4; color: var(--ink); }
+    .hero__langs {
+      margin-top: 14px; font-weight: 600; font-size: .98rem; color: var(--ink);
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 7px;
+    }
+    .hero__langs .dot { color: var(--rose-700); }
+    .hero__status { margin-top: 18px; }
+    .hero__actions { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 22px; }
+
+    .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 12px; }
+    .stat {
+      background: var(--white); border: 1px solid var(--pink-300); border-radius: var(--r-m);
+      box-shadow: var(--shadow-s); padding: 18px 14px; text-align: center;
+      display: flex; flex-direction: column; align-items: center; gap: 4px;
+    }
+    .stat__value { font-variant-numeric: lining-nums; font-family: var(--font-serif); font-weight: 600; font-size: clamp(1.7rem, 6vw, 2.2rem); line-height: 1.1; color: var(--ink); }
+    .stat__value::after { content: ""; display: block; width: 28px; height: 3px; border-radius: 3px; background: var(--pink-300); margin: 8px auto 0; }
+    .stat__label { font-size: .92rem; line-height: 1.35; color: var(--ink-soft); }
+
+    @media (min-width: 480px) {
+      .hero__photo { width: 230px; }
+      .hero__actions { display: flex; flex-wrap: wrap; justify-content: center; }
+      .hero__langs { font-size: 1.1rem; gap: 2px 10px; }
+      .btn { padding: 0 24px; }
+    }
+    @media (min-width: 800px) {
+      .stats { grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    }
+    @media (min-width: 960px) {
+      .hero { padding-top: 40px; }
+      .hero__grid {
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+        grid-template-areas: "text photo" "stats stats";
+        column-gap: 48px; row-gap: 48px; align-items: center;
+      }
+      .hero__text { grid-area: text; text-align: left; }
+      .hero__photo { grid-area: photo; order: 0; width: min(100%, 360px); justify-self: center; }
+      .stats { grid-area: stats; margin-top: 0; }
+      .hero__langs, .hero__actions { justify-content: flex-start; }
+      .hero__langs { font-size: 1.2rem; }
+    }
+
+    /* ============================================================
+       7. ABOUT  +  "What I bring"
+       ============================================================ */
+    .about-grid { display: grid; gap: 28px; align-items: start; }
+    .about-card { padding: clamp(22px, 4vw, 36px); border-radius: var(--r-l); }
+    .about-card p { font-size: 1.05rem; line-height: 1.75; }
+    .about-card p + p { margin-top: 1em; }
+    .about-card strong { font-weight: 700; }
+    .bring h3 { font-size: 1.4rem; margin-bottom: 16px; }
+    .bring ul { display: grid; gap: 12px; }
+    .bring li {
+      display: flex; align-items: center; gap: 14px;
+      background: var(--white); border: 1px solid var(--pink-300); border-radius: var(--r-s);
+      box-shadow: var(--shadow-s); padding: 12px 16px; font-weight: 600; line-height: 1.35;
+    }
+    .bring__icon {
+      width: 44px; height: 44px; flex: none; border-radius: 50%;
+      display: grid; place-items: center; background: var(--pink-100); color: var(--rose-700);
+    }
+    @media (min-width: 900px) {
+      .about-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 40px; }
+    }
+
+    /* ============================================================
+       8. LANGUAGES  (cards with text levels + A1–C2 scale markers)
+       ============================================================ */
+    .native { display: flex; justify-content: center; margin-bottom: 28px; }
+    .native__card {
+      display: inline-flex; align-items: center; gap: 16px;
+      background: var(--white); border: 1px solid var(--pink-300); border-radius: 999px;
+      box-shadow: var(--shadow-s); padding: 12px 28px 12px 14px;
+    }
+    .native__icon { width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; background: var(--pink-100); color: var(--rose-700); }
+    .native__label { display: block; font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+    .native__name { font-family: var(--font-serif); font-weight: 600; font-size: 1.6rem; line-height: 1.1; }
+
+    .lang-grid { display: grid; gap: 20px; }
+    .lang-card { padding: 22px 20px 12px; border-radius: var(--r-l); }
+    .lang-card h3 { font-size: 1.6rem; margin-bottom: 8px; }
+    .lang-row {
+      display: grid; grid-template-columns: 1fr auto; align-items: baseline; row-gap: 8px;
+      padding: 14px 0 16px; border-top: 1px solid var(--pink-100);
+    }
+    .lang-row:first-child { border-top: 0; }
+    .lang-row__label { font-weight: 500; color: var(--ink-soft); }
+    .lang-row__level { font-variant-numeric: lining-nums; font-family: var(--font-serif); font-weight: 600; font-size: 1.25rem; color: var(--ink); }
+    .scale {
+      grid-column: 1 / -1;
+      display: grid; grid-template-columns: repeat(6, 1fr); gap: 2px;
+      border-top: 2px solid var(--pink-300); padding-top: 8px; margin-top: 4px;
+    }
+    .scale li {
+      position: relative; text-align: center; font-size: .75rem; line-height: 1; letter-spacing: .02em;
+      padding: 7px 0; border-radius: 9px; color: var(--ink-soft);
+    }
+    .scale li::before { content: ""; position: absolute; left: 50%; top: -13px; width: 2px; height: 5px; background: var(--pink-300); transform: translateX(-50%); }
+    .scale li.is-level { background: var(--pink-300); color: var(--ink); font-weight: 700; box-shadow: 0 0 0 1.5px var(--ink); }
+    .scale li.is-level::before { background: var(--ink); height: 8px; top: -15px; }
+    .scale-note { text-align: center; margin-top: 24px; font-size: .9rem; color: var(--ink-soft); }
+    @media (min-width: 720px) {
+      .lang-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+      .lang-card { padding: 20px 16px 8px; }
+    }
+    @media (min-width: 960px) {
+      .lang-grid { gap: 24px; }
+      .lang-card { padding: 26px 24px 12px; }
+    }
+
+    /* ============================================================
+       9. EXPERIENCE  (vertical timeline)
+       ============================================================ */
+    .timeline { --date-w: 200px; --axis-w: 44px; position: relative; max-width: 980px; margin-inline: auto; display: grid; gap: 28px; }
+    .timeline::before {
+      content: ""; position: absolute; top: 14px; bottom: 14px; left: 12.5px;
+      width: 3px; border-radius: 3px; background: var(--pink-300);
+    }
+    .tl-item { position: relative; display: grid; grid-template-columns: 28px minmax(0, 1fr); column-gap: 12px; row-gap: 10px; }
+    .tl-dot {
+      grid-column: 1; grid-row: 1; position: relative; z-index: 1;
+      width: 18px; height: 18px; margin: 4px 0 0 5px; border-radius: 50%;
+      background: var(--pink-300); border: 3px solid var(--white); box-shadow: 0 0 0 2px var(--pink-300);
+    }
+    .tl-date { grid-column: 2; grid-row: 1; white-space: nowrap; font-weight: 600; font-size: .95rem; color: var(--ink-soft); letter-spacing: .02em; }
+    .tl-card { grid-column: 2; grid-row: 2; }
+    .tl-card h3 { font-size: 1.35rem; }
+    .tl-org { margin-top: 4px; color: var(--ink-soft); }
+    .tl-meta { display: flex; align-items: center; gap: 6px; margin-top: 4px; font-size: .9rem; color: var(--ink-soft); }
+    .tl-meta .icon { width: 1em; height: 1em; color: var(--rose-700); }
+    .tl-desc { margin-top: 14px; }
+    @media (min-width: 860px) {
+      .timeline::before { left: calc(var(--date-w) + var(--axis-w) / 2 - 1.5px); }
+      .tl-item { grid-template-columns: var(--date-w) var(--axis-w) minmax(0, 1fr); column-gap: 0; row-gap: 0; }
+      .tl-date { grid-column: 1; grid-row: 1; text-align: right; padding: 24px 14px 0 0; }
+      .tl-dot { grid-column: 2; grid-row: 1; justify-self: center; margin: 27px 0 0; }
+      .tl-card { grid-column: 3; grid-row: 1; padding: 24px 28px 26px; }
+    }
+
+    /* ============================================================
+       10. EDUCATION
+       ============================================================ */
+    .edu-grid { display: grid; gap: 20px; }
+    .edu-card { border-radius: var(--r-l); padding: clamp(22px, 4vw, 32px); display: flex; flex-direction: column; }
+    .edu-icon { width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; background: var(--pink-100); color: var(--rose-700); margin-bottom: 16px; }
+    .edu-card h3 { font-size: 1.4rem; }
+    .edu-school { margin-top: 6px; font-weight: 600; }
+    .edu-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 8px; font-size: .92rem; color: var(--ink-soft); }
+    .edu-meta span { display: inline-flex; align-items: center; gap: 6px; }
+    .edu-meta .icon { width: 1em; height: 1em; color: var(--rose-700); }
+    .edu-thesis { margin-top: 16px; padding: 12px 16px; border-radius: var(--r-s); background: var(--blush); border: 1px solid var(--pink-100); font-size: .95rem; }
+    .edu-thesis b { display: block; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 2px; }
+    .edu-card .link-ext { margin-top: auto; align-self: flex-start; }
+    .edu-card .tags { margin-bottom: 8px; }
+    @media (min-width: 800px) { .edu-grid { grid-template-columns: 1fr 1fr; gap: 24px; } }
+
+    /* ============================================================
+       11. SKILLS  (pill chips)
+       ============================================================ */
+    .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 900px; margin-inline: auto; }
+    .chip {
+      display: inline-flex; align-items: center; text-align: center; line-height: 1.35;
+      background: var(--pink-100); border: 1px solid var(--pink-300); border-radius: 20px;
+      padding: 10px 18px; font-weight: 500;
+    }
+
+    /* ============================================================
+       12. INTERESTS
+       ============================================================ */
+    .interest {
+      position: relative; overflow: hidden; max-width: 880px; margin-inline: auto;
+      display: grid; gap: 20px; justify-items: center; text-align: center;
+      background: linear-gradient(135deg, var(--pink-100) 0%, var(--white) 100%);
+      border: 1px solid var(--pink-300); border-radius: var(--r-l); box-shadow: var(--shadow-m);
+      padding: clamp(24px, 5vw, 44px);
+    }
+    .interest__art { position: relative; width: 150px; height: 150px; display: grid; place-items: center; }
+    .interest__art .blob { position: absolute; inset: -6%; width: 112%; height: 112%; max-width: none; fill: var(--pink-300); opacity: .55; }
+    .interest__art .palette { position: relative; width: 132px; height: 132px; }
+    .interest h3 { font-size: 1.6rem; }
+    .interest p { margin-top: 10px; font-size: 1.05rem; line-height: 1.75; max-width: 52ch; }
+    @media (min-width: 720px) {
+      .interest { grid-template-columns: 190px 1fr; justify-items: start; text-align: left; gap: 40px; }
+      .interest__art { width: 190px; height: 190px; }
+      .interest__art .palette { width: 168px; height: 168px; }
+    }
+
+    /* ============================================================
+       13. CONTACT  +  FOOTER
+       ============================================================ */
+    .contact-card {
+      position: relative; overflow: hidden; max-width: 920px; margin-inline: auto;
+      background: linear-gradient(135deg, var(--pink-100) 0%, var(--blush) 100%);
+      border: 1px solid var(--pink-300); border-radius: var(--r-l); box-shadow: var(--shadow-m);
+      padding: 16px;
+    }
+    .contact-list { position: relative; z-index: 1; display: grid; gap: 12px; }
+    .contact-item {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px;
+      background: var(--white); border: 1px solid var(--pink-300); border-radius: var(--r-s);
+      padding: 14px;
+    }
+    .contact-item__icon { width: 44px; height: 44px; flex: none; border-radius: 50%; display: grid; place-items: center; background: var(--pink-100); color: var(--rose-700); }
+    .contact-item__text { flex: 1 1 150px; min-width: 0; }
+    .contact-item__label { display: block; font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+    .contact-item__value { display: block; font-weight: 600; font-size: 1rem; overflow-wrap: anywhere; }
+    .contact-item a.contact-item__value { display: flex; align-items: center; min-height: 44px; }
+    .contact-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    .copy-btn { display: none; }
+    .js .copy-btn { display: inline-flex; }
+    .copy-btn .icon { width: 1.1em; height: 1.1em; }
+    .copy-status { font-size: .9rem; font-weight: 500; color: var(--ink); }
+    @media (min-width: 720px) {
+      .contact-card { padding: 28px; }
+      .contact-list { grid-template-columns: 1fr 1fr; gap: 16px; }
+      .contact-item { padding: 16px 20px; }
+      .contact-item--wide { grid-column: 1 / -1; }
+      .contact-item__value { font-size: 1.1rem; }
+    }
+
+    .site-footer { background: var(--blush); border-top: 1px solid var(--pink-100); padding: 28px 0; }
+    .footer-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; color: var(--ink-soft); }
+    .footer-row a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+
+    /* ============================================================
+       14. MOTION  (kept subtle; switched off for people who prefer less motion)
+       ============================================================ */
+    @media (prefers-reduced-motion: no-preference) {
+      html { scroll-behavior: smooth; }
+      .js .reveal {
+        opacity: 0; transform: translateY(18px);
+        transition: opacity .6s ease, transform .6s ease;
+        transition-delay: var(--d, 0ms);
+      }
+      .js .reveal.is-visible { opacity: 1; transform: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================================================
+       ICON LIBRARY (hidden; icons are reused further down). Do not edit.
+       ============================================================ -->
+  <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3.8 7.8 8.2 6 8.2-6"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4.5"/><path d="M8 10.5v6M8 7.6v.01M12 16.5v-6M12 13.4c0-1.7 1.1-2.9 2.7-2.9s2.3 1.1 2.3 2.9v3.1"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+      <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l1-4L16.5 4.5a2.1 2.1 0 0 1 3 3L8 19l-4 1Z"/><path d="m14.5 6.5 3 3"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-4.5 3.5V17H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/><path d="M8 10h8M8 13h5"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6L13 3Z"/></symbol>
+      <symbol id="i-checklist" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16.5" rx="3"/><path d="M9 4.5V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v.5"/><path d="m9 13 2.2 2.2L15.5 11"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="3"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2.5 9.5 12 5l9.5 4.5L12 14 2.5 9.5Z"/><path d="M6.5 12v4.2c0 1.2 2.5 2.8 5.5 2.8s5.5-1.6 5.5-2.8V12M21.5 9.5V15"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3Z"/></symbol>
+      <symbol id="i-permit" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="11" r="2"/><path d="M6.2 16c.6-1.4 1.6-2 2.8-2s2.2.6 2.8 2M14 10h4M14 13.5h3"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V6m0 0-5 5m5-5 5 5"/></symbol>
+      <!-- Decorative blobs -->
+      <symbol id="blob-a" viewBox="0 0 200 200"><path d="M179.9 124.7C172.5 141.5 149.2 152.2 132.0 160.7C114.8 169.2 94.9 178.9 76.6 175.7C58.3 172.4 29.8 157.2 22.2 141.1C14.6 124.9 24.4 97.5 31.1 78.7C37.7 59.9 47.4 35.5 62.2 28.4C77.0 21.3 100.8 30.9 119.8 36.1C138.8 41.3 166.3 45.0 176.3 59.8C186.3 74.5 187.2 107.9 179.9 124.7Z"/></symbol>
+      <symbol id="blob-b" viewBox="0 0 200 200"><path d="M135.9 170.6C118.6 180.4 89.2 190.1 72.8 183.7C56.3 177.2 45.8 150.1 37.3 131.9C28.7 113.7 16.7 91.2 21.3 74.4C25.9 57.6 47.2 40.7 64.9 31.0C82.5 21.3 111.2 10.0 127.2 16.3C143.3 22.6 152.9 50.7 161.2 68.9C169.5 87.0 181.2 108.1 177.0 125.1C172.8 142.0 153.3 160.8 135.9 170.6Z"/></symbol>
+      <symbol id="blob-c" viewBox="0 0 200 200"><path d="M172.6 149.7C159.5 168.7 118.8 181.2 94.0 179.0C69.2 176.8 33.4 156.9 23.8 136.5C14.3 116.2 23.0 77.5 36.8 56.8C50.6 36.1 84.0 10.9 106.7 12.3C129.4 13.6 162.0 42.1 173.0 65.0C184.0 87.9 185.8 130.7 172.6 149.7Z"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============================================================
+       NAVIGATION
+       To rename a menu item, edit the text between the <a> tags.
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="wrap nav-bar">
+      <a class="brand" href="#top">
+        <span class="brand__mark" aria-hidden="true">IT</span>
+        <span>Ivanna Tsymbal</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <svg class="icon icon-menu" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+        <span>Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-menu" aria-label="Main">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a class="nav-cta" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO  (name, headline, languages, status, buttons, key facts)
+         ============================================================ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <svg class="deco deco--blob" style="top:-90px;right:-110px;width:420px;height:420px" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><use href="#blob-a"/></svg>
+      <svg class="deco deco--blob-soft" style="bottom:70px;left:-170px;width:340px;height:340px" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><use href="#blob-b"/></svg>
+
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <h1 id="hero-title" class="reveal">Ivanna Tsymbal</h1>
+          <p class="hero__headline reveal" style="--d:80ms">Multilingual communicator seeking a Customer Advisor role in Porto</p>
+          <p class="hero__langs reveal" style="--d:140ms">
+            <span>Ukrainian</span><span class="dot" aria-hidden="true">·</span><span>English</span><span class="dot" aria-hidden="true">·</span><span>Portuguese</span><span class="dot" aria-hidden="true">·</span><span>Russian</span>
+          </p>
+          <p class="hero__status reveal" style="--d:200ms">
+            <span class="pill">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>
+              Available to work on-site in Porto
+            </span>
+          </p>
+          <div class="hero__actions reveal" style="--d:260ms">
+            <a class="btn btn--primary" href="mailto:ivannats2001@gmail.com">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg>
+              Get in touch
+            </a>
+            <a class="btn btn--secondary" href="https://www.linkedin.com/in/ivanna-tsymbal-112234338" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg>
+              LinkedIn<span class="visually-hidden"> (opens in a new tab)</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__photo reveal">
+          <svg class="hero__blob" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><use href="#blob-c"/></svg>
+          <img class="avatar" src="assets/ivanna-headshot.jpg" width="250" height="250" alt="Portrait of Ivanna Tsymbal, smiling and wearing glasses">
+        </div>
+
+        <!-- Key facts: edit the number/word (first line) and the description (second line) -->
+        <ul class="stats">
+          <li class="stat reveal">
+            <strong class="stat__value">4</strong>
+            <span class="stat__label">languages</span>
+          </li>
+          <li class="stat reveal" style="--d:70ms">
+            <strong class="stat__value">8</strong>
+            <span class="stat__label">years of Portuguese training</span>
+          </li>
+          <li class="stat reveal" style="--d:140ms">
+            <strong class="stat__value">Master's</strong>
+            <span class="stat__label">University of Porto</span>
+          </li>
+          <li class="stat reveal" style="--d:210ms">
+            <strong class="stat__value">8-hour</strong>
+            <span class="stat__label">video course translated and narrated</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT  (first person) + WHAT I BRING
+         ============================================================ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <svg class="deco deco--blob-soft" style="top:30px;right:-140px;width:360px;height:360px" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><use href="#blob-b"/></svg>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 id="about-title">About</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="card about-card reveal">
+            <p>I am a <strong>multilingual graduate</strong> (fluent in Ukrainian, English, European Portuguese and Russian) based in Porto, eager to begin a career in customer support as a <strong>Customer Advisor</strong>, where I can put my language and communication skills to work. Experienced in clear written communication, explaining things to non-experts, and working to deadlines.</p>
+            <p>Trained in Portuguese for the last 8 years, with a Master's from the University of Porto and hands-on experience supporting Ukrainian speakers who moved to Portugal. Quick to learn new tools and comfortable following detailed guidelines. <strong>Available to work <span class="nowrap">on-site</span> in Porto.</strong></p>
+          </div>
+
+          <div class="bring reveal" style="--d:100ms">
+            <h3>What I bring</h3>
+            <ul>
+              <li>
+                <span class="bring__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pen"/></svg></span>
+                <span>Clear written communication</span>
+              </li>
+              <li>
+                <span class="bring__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chat"/></svg></span>
+                <span>Explaining things to <span class="nowrap">non-experts</span></span>
+              </li>
+              <li>
+                <span class="bring__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg></span>
+                <span>Working to deadlines</span>
+              </li>
+              <li>
+                <span class="bring__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bolt"/></svg></span>
+                <span>Quick to learn new tools</span>
+              </li>
+              <li>
+                <span class="bring__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-checklist"/></svg></span>
+                <span>Following detailed guidelines</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         LANGUAGES
+         Each card lists five skills. To change a level, move the class
+         "is-level" to another <li> in that row's A1–C2 scale AND edit the
+         big level text (e.g. C1) in the same row.
+         ============================================================ -->
+    <section class="section section--blush" id="languages" aria-labelledby="languages-title">
+      <svg class="wave" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 64V34C180 4 360 4 540 26S900 62 1080 40 1320 10 1440 24V64Z"/></svg>
+      <svg class="deco deco--blob" style="top:90px;left:-190px;width:360px;height:360px" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><use href="#blob-a"/></svg>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 id="languages-title">Languages</h2>
+          <p>CEFR levels, from A1 (basic user) to C2 (proficient user).</p>
+        </div>
+
+        <div class="native reveal">
+          <div class="native__card">
+            <span class="native__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-globe"/></svg></span>
+            <span>
+              <span class="native__label">Mother tongue</span>
+              <span class="native__name">Ukrainian</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="lang-grid">
+        <article class="card lang-card reveal" style="--d:0ms" aria-labelledby="lang-pt">
+          <h3 id="lang-pt">Portuguese</h3>
+          <ul class="lang-rows">
+          <li class="lang-row">
+            <span class="lang-row__label">Listening</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C2</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li>C1</li><li class="is-level">C2</li></ol>
+          </li>
+          <li class="lang-row">
+            <span class="lang-row__label">Reading</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C2</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li>C1</li><li class="is-level">C2</li></ol>
+          </li>
+          <li class="lang-row">
+            <span class="lang-row__label">Spoken production</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C1</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li class="is-level">C1</li><li>C2</li></ol>
+          </li>
+          <li class="lang-row">
+            <span class="lang-row__label">Spoken interaction</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C1</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li class="is-level">C1</li><li>C2</li></ol>
+          </li>
+          <li class="lang-row">
+            <span class="lang-row__label">Writing</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C1</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li class="is-level">C1</li><li>C2</li></ol>
+          </li>
+          </ul>
+        </article>
+        <article class="card lang-card reveal" style="--d:90ms" aria-labelledby="lang-en">
+          <h3 id="lang-en">English</h3>
+          <ul class="lang-rows">
+          <li class="lang-row">
+            <span class="lang-row__label">Listening</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C2</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li>C1</li><li class="is-level">C2</li></ol>
+          </li>
+          <li class="lang-row">
+            <span class="lang-row__label">Reading</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C2</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li>C1</li><li class="is-level">C2</li></ol>
+          </li>
+          <li class="lang-row">
+            <span class="lang-row__label">Spoken production</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C2</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li>C1</li><li class="is-level">C2</li></ol>
+          </li>
+          <li class="lang-row">
+            <span class="lang-row__label">Spoken interaction</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C2</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li>C1</li><li class="is-level">C2</li></ol>
+          </li>
+          <li class="lang-row">
+            <span class="lang-row__label">Writing</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C2</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li>C1</li><li class="is-level">C2</li></ol>
+          </li>
+          </ul>
+        </article>
+        <article class="card lang-card reveal" style="--d:180ms" aria-labelledby="lang-ru">
+          <h3 id="lang-ru">Russian</h3>
+          <ul class="lang-rows">
+          <li class="lang-row">
+            <span class="lang-row__label">Listening</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C2</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li>C1</li><li class="is-level">C2</li></ol>
+          </li>
+          <li class="lang-row">
+            <span class="lang-row__label">Reading</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C2</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li>C1</li><li class="is-level">C2</li></ol>
+          </li>
+          <li class="lang-row">
+            <span class="lang-row__label">Spoken production</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C1</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li class="is-level">C1</li><li>C2</li></ol>
+          </li>
+          <li class="lang-row">
+            <span class="lang-row__label">Spoken interaction</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C1</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li class="is-level">C1</li><li>C2</li></ol>
+          </li>
+          <li class="lang-row">
+            <span class="lang-row__label">Writing</span>
+            <span class="lang-row__level"><span class="visually-hidden">Level </span>C1</span>
+            <ol class="scale" aria-hidden="true"><li>A1</li><li>A2</li><li>B1</li><li>B2</li><li class="is-level">C1</li><li>C2</li></ol>
+          </li>
+          </ul>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EXPERIENCE  (newest first). To add a role, copy one whole <li class="tl-item">…</li> block.
+         ============================================================ -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <svg class="wave" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 64V30C220 58 420 60 700 36S1200 2 1440 32V64Z"/></svg>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 id="experience-title">Experience</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <p class="tl-date">Oct 2025 – Feb 2026</p>
+            <article class="card tl-card">
+              <h3>Freelance Translator</h3>
+              <p class="tl-org">Multimedia project</p>
+              <p class="tl-desc">Translated and narrated an 8-hour Portuguese-to-English video course in a two-person team, dividing the workload, keeping terminology consistent, and meeting all deadlines.</p>
+              <ul class="tags" aria-label="Skills used">
+                <li class="tag">Translation</li>
+                <li class="tag">Narration</li>
+                <li class="tag">Terminology</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <p class="tl-date">Mar 2025 – Jun 2025</p>
+            <article class="card tl-card">
+              <h3>Subtitling Intern</h3>
+              <p class="tl-org">Sintagma (multimedia translation company)</p>
+              <p class="tl-meta"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>Lisbon/Porto, Portugal</p>
+              <p class="tl-desc">Produced accessibility subtitles for a Portuguese broadcaster, following strict style rules and quality standards under time pressure, and independently learned and applied new professional software (OOONA) in my daily work.</p>
+              <ul class="tags" aria-label="Skills used">
+                <li class="tag">Subtitling</li>
+                <li class="tag">Accessibility</li>
+                <li class="tag">OOONA</li>
+              </ul>
+              <a class="link-ext" href="https://www.sintagma.pt" target="_blank" rel="noopener noreferrer">Sintagma website<span class="visually-hidden"> (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-external"/></svg></a>
+            </article>
+          </li>
+
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <p class="tl-date">Feb 2024 – Jul 2024</p>
+            <article class="card tl-card">
+              <h3>English Tutor</h3>
+              <p class="tl-org">Safespace Academy (online language school)</p>
+              <p class="tl-meta"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>Kyiv, Ukraine</p>
+              <p class="tl-desc">Provided remote one-to-one English tutoring to Ukrainian clients, adapting each lesson to the learner's level and goals and keeping them motivated.</p>
+              <ul class="tags" aria-label="Skills used">
+                <li class="tag">Remote tutoring</li>
+                <li class="tag">One-to-one</li>
+                <li class="tag">Adapting lessons</li>
+              </ul>
+              <a class="link-ext" href="https://www.instagram.com/safespace.academy" target="_blank" rel="noopener noreferrer">Safespace Academy on Instagram<span class="visually-hidden"> (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-external"/></svg></a>
+            </article>
+          </li>
+
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <p class="tl-date">May 2023 – May 2024</p>
+            <article class="card tl-card">
+              <h3>Portuguese Tutor</h3>
+              <p class="tl-org">BLP (online language school) and freelance</p>
+              <p class="tl-meta"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>Kyiv, Ukraine</p>
+              <p class="tl-desc">Provided remote one-to-one language support to Ukrainians relocating to Portugal, identifying each client's needs, answering questions, and adapting explanations to their level.</p>
+              <ul class="tags" aria-label="Skills used">
+                <li class="tag">Remote support</li>
+                <li class="tag">Client needs</li>
+                <li class="tag">Adapting explanations</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EDUCATION
+         ============================================================ -->
+    <section class="section section--blush" id="education" aria-labelledby="education-title">
+      <svg class="wave" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 64V34C180 4 360 4 540 26S900 62 1080 40 1320 10 1440 24V64Z"/></svg>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 id="education-title">Education</h2>
+        </div>
+
+        <div class="edu-grid">
+          <article class="card edu-card reveal">
+            <span class="edu-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cap"/></svg></span>
+            <h3>Master of Arts in Translation and Language Services</h3>
+            <p class="edu-school">University of Porto (FLUP, U.Porto)</p>
+            <p class="edu-meta">
+              <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>Porto, Portugal</span>
+              <span>Sep 2022 – Nov 2025</span>
+            </p>
+            <ul class="tags" aria-label="Details">
+              <li class="tag">Arts and humanities</li>
+              <li class="tag">Final grade: 16</li>
+              <li class="tag">EQF level 7</li>
+            </ul>
+            <p class="edu-thesis"><b>Thesis</b>“Audiovisual Accessibility in Sintagma: Internship report”</p>
+            <a class="link-ext" href="https://www.up.pt/flup/pt/" target="_blank" rel="noopener noreferrer">University website<span class="visually-hidden"> (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-external"/></svg></a>
+          </article>
+
+          <article class="card edu-card reveal" style="--d:100ms">
+            <span class="edu-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cap"/></svg></span>
+            <h3>Bachelor's Degree in Translation (Portuguese and English)</h3>
+            <p class="edu-school">Taras Shevchenko National University of Kyiv</p>
+            <p class="edu-meta">
+              <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>Kyiv, Ukraine</span>
+              <span>Sep 2018 – Jun 2022</span>
+            </p>
+            <ul class="tags" aria-label="Details">
+              <li class="tag">Arts and humanities</li>
+              <li class="tag">EQF level 6</li>
+            </ul>
+            <a class="link-ext" href="http://www.univ.kiev.ua/en/" target="_blank" rel="noopener noreferrer">University website<span class="visually-hidden"> (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-external"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS  (one chip per <li>)
+         ============================================================ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <svg class="wave" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 64V30C220 58 420 60 700 36S1200 2 1440 32V64Z"/></svg>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 id="skills-title">Skills</h2>
+        </div>
+
+        <ul class="chips">
+          <li class="chip reveal">Written and spoken communication</li>
+          <li class="chip reveal" style="--d:40ms">Problem-solving and attention to detail</li>
+          <li class="chip reveal" style="--d:80ms">Linguistic quality assurance</li>
+          <li class="chip reveal" style="--d:120ms">Following style guides and quality standards</li>
+          <li class="chip reveal" style="--d:160ms">Meeting deadlines</li>
+          <li class="chip reveal" style="--d:200ms">Working independently</li>
+          <li class="chip reveal" style="--d:240ms">Remote collaboration</li>
+          <li class="chip reveal" style="--d:280ms">Rapid learner</li>
+          <li class="chip reveal" style="--d:320ms">Adaptability</li>
+          <li class="chip reveal" style="--d:360ms">Microsoft Office (Word, Excel, PowerPoint, Outlook, OneNote)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         INTERESTS  (first person)
+         ============================================================ -->
+    <section class="section section--blush" id="interests" aria-labelledby="interests-title">
+      <svg class="wave" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 64V34C180 4 360 4 540 26S900 62 1080 40 1320 10 1440 24V64Z"/></svg>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 id="interests-title">Interests</h2>
+        </div>
+
+        <div class="interest reveal">
+          <div class="interest__art" aria-hidden="true">
+            <svg class="blob" viewBox="0 0 200 200" focusable="false"><use href="#blob-b"/></svg>
+            <!-- Decorative palette and brush (simple line drawing, not artwork by Ivanna) -->
+            <svg class="palette" viewBox="0 0 160 160" fill="none" stroke="#A8345F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <path fill="#FFFFFF" d="M78 18C42 18 16 44 16 78c0 32 23 62 54 62 11 0 15-6 15-12 0-7-5-10-5-15 0-7 6-11 13-11h19c21 0 32-12 32-30 0-33-28-54-66-54Z"/>
+              <circle cx="46" cy="70" r="9" fill="#F7BFD2"/>
+              <circle cx="66" cy="46" r="9" fill="#FDE4EC"/>
+              <circle cx="96" cy="44" r="9" fill="#FFF6F9"/>
+              <circle cx="116" cy="66" r="9" fill="#F7BFD2"/>
+              <circle cx="50" cy="104" r="7" fill="#FFFFFF"/>
+              <path d="M100 144 138 78"/>
+              <path fill="#F7BFD2" d="M138 78c1-9 7-14 14-16 0 8-4 14-12 18Z"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Digital art and painting</h3>
+            <p>I enjoy engaging in artistic pursuits such as digital art, sketching, and painting, which helps me maintain balance in my daily life and enhances my focus while at work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+         The email address is used in: the hero "Get in touch" button (above) and the
+         two spots below (link and visible text). The "Copy email" button reads the
+         address from the link below automatically.
+         ============================================================ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <svg class="wave" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 64V30C220 58 420 60 700 36S1200 2 1440 32V64Z"/></svg>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 id="contact-title">Contact</h2>
+          <p>Available to work on-site in Porto.</p>
+        </div>
+
+        <div class="contact-card reveal">
+          <svg class="deco deco--blob" style="top:-110px;right:-90px;width:300px;height:300px" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><use href="#blob-a"/></svg>
+          <svg class="deco deco--blob" style="bottom:-120px;left:-100px;width:280px;height:280px" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><use href="#blob-c"/></svg>
+
+          <ul class="contact-list">
+            <li class="contact-item contact-item--wide">
+              <span class="contact-item__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span>
+              <span class="contact-item__text">
+                <span class="contact-item__label">Email</span>
+                <a class="contact-item__value" id="contact-email" href="mailto:ivannats2001@gmail.com">ivannats2001@gmail.com</a>
+              </span>
+              <span class="contact-actions">
+                <button class="btn btn--secondary copy-btn" type="button" id="copy-email">
+                  <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg>
+                  <span id="copy-label">Copy email</span>
+                </button>
+                <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
+              </span>
+            </li>
+            <li class="contact-item contact-item--wide">
+              <span class="contact-item__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></span>
+              <span class="contact-item__text">
+                <span class="contact-item__label">LinkedIn</span>
+                <a class="contact-item__value" href="https://www.linkedin.com/in/ivanna-tsymbal-112234338" target="_blank" rel="noopener noreferrer">Ivanna Tsymbal<span class="visually-hidden"> (opens in a new tab)</span></a>
+              </span>
+            </li>
+            <li class="contact-item">
+              <span class="contact-item__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span>
+              <span class="contact-item__text">
+                <span class="contact-item__label">Location</span>
+                <span class="contact-item__value">Porto, Portugal</span>
+              </span>
+            </li>
+            <li class="contact-item">
+              <span class="contact-item__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-permit"/></svg></span>
+              <span class="contact-item__text">
+                <span class="contact-item__label">Work permit</span>
+                <span class="contact-item__value">Portugal</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>© 2026 Ivanna Tsymbal</p>
+      <a href="#top"><svg class="icon" aria-hidden="true" focusable="false" style="margin-right:6px"><use href="#i-arrow-up"/></svg>Back to top</a>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SCRIPT  (menu, scroll effects, "Copy email"). No tracking, no external calls.
+       ============================================================ -->
+  <script>
+    (function () {
+      'use strict';
+      var root = document.documentElement;
+      try {
+        var header = document.getElementById('site-header');
+        var toggle = header.querySelector('.nav-toggle');
+        var menu = document.getElementById('site-menu');
+        var links = [].slice.call(menu.querySelectorAll('a[href^="#"]'));
+        var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+        var lastSection = sections[sections.length - 1];
+        var desktop = window.matchMedia('(min-width: 900px)');
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+        /* ---- Mobile menu ---- */
+        function setMenu(open) {
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          menu.classList.toggle('is-open', open);
+        }
+        toggle.addEventListener('click', function () {
+          setMenu(toggle.getAttribute('aria-expanded') !== 'true');
+        });
+        links.forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && menu.classList.contains('is-open')) { setMenu(false); toggle.focus(); }
+        });
+        document.addEventListener('click', function (e) {
+          if (menu.classList.contains('is-open') && !header.contains(e.target)) { setMenu(false); }
+        });
+        function onBreakpoint() { if (desktop.matches) { setMenu(false); } }
+        if (desktop.addEventListener) { desktop.addEventListener('change', onBreakpoint); } else { desktop.addListener(onBreakpoint); }
+
+        /* ---- Nav shadow + active section ---- */
+        var ticking = false;
+        function update() {
+          ticking = false;
+          header.classList.toggle('is-scrolled', window.scrollY > 8);
+
+          var probe = header.offsetHeight + (window.innerHeight - header.offsetHeight) * 0.3;
+          var current = null;
+          sections.forEach(function (s) { if (s.getBoundingClientRect().top <= probe) { current = s; } });
+          if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) { current = lastSection; }
+          links.forEach(function (a, i) {
+            if (sections[i] === current) { a.setAttribute('aria-current', 'true'); } else { a.removeAttribute('aria-current'); }
+          });
+        }
+        function requestUpdate() { if (!ticking) { ticking = true; window.requestAnimationFrame(update); } }
+        window.addEventListener('scroll', requestUpdate, { passive: true });
+        window.addEventListener('resize', requestUpdate);
+        update();
+
+        /* ---- Fade-up on scroll ---- */
+        var items = [].slice.call(document.querySelectorAll('.reveal'));
+        if ('IntersectionObserver' in window && !reduceMotion.matches) {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+          items.forEach(function (el) { io.observe(el); });
+        } else {
+          items.forEach(function (el) { el.classList.add('is-visible'); });
+        }
+
+        /* ---- Copy email ---- */
+        var copyBtn = document.getElementById('copy-email');
+        var copyLabel = document.getElementById('copy-label');
+        var copyStatus = document.getElementById('copy-status');
+        var emailLink = document.getElementById('contact-email');
+        var resetTimer;
+        function fallbackCopy(text) {
+          var ta = document.createElement('textarea');
+          ta.value = text; ta.setAttribute('readonly', '');
+          ta.style.position = 'fixed'; ta.style.opacity = '0'; ta.style.top = '0';
+          document.body.appendChild(ta); ta.select();
+          var ok = false;
+          try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+          document.body.removeChild(ta);
+          return ok;
+        }
+        function copyText(text) {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            return navigator.clipboard.writeText(text).then(function () { return true; }, function () { return fallbackCopy(text); });
+          }
+          return Promise.resolve(fallbackCopy(text));
+        }
+        copyBtn.addEventListener('click', function () {
+          var email = emailLink.getAttribute('href').replace(/^mailto:/i, '');
+          copyText(email).then(function (ok) {
+            copyLabel.textContent = ok ? 'Copied' : 'Copy email';
+            copyStatus.textContent = ok ? 'Email address copied.' : 'Could not copy automatically. Please select the address and copy it.';
+            clearTimeout(resetTimer);
+            resetTimer = setTimeout(function () { copyLabel.textContent = 'Copy email'; copyStatus.textContent = ''; }, 2500);
+          });
+        });
+      } catch (err) {
+        /* If anything goes wrong, fall back to the plain, fully visible page. */
+        root.classList.remove('js');
+      }
+    })();
+  </script>
+</body>
+</html>
